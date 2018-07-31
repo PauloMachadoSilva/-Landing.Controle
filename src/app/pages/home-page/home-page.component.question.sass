@@ -1,0 +1,71 @@
+@import '../../../assets/styles/tools/mixins'
+.container
+    .faq
+        > h2
+            color: #660099
+            font-family: 'OfficinaSerifStd-Bold'
+            font-size: 30px
+            letter-spacing: -0.5px
+            text-align: center
+        h3
+            color: #660099
+            font-family: 'OfficinaSerifStd-Bold'
+            font-size: 18px
+            font-weight: bold
+        p
+            color: #4a4a4a
+            font-family: 'OfficinaSerifStd-Book'
+            font-size: 15px
+            letter-spacing: -0.5px
+            text-align: justify
+
+        ul
+            margin-bottom: 30px
+            li
+                &.item
+                    h3
+                        position: relative
+                        &:before
+                            background-size: contain
+                            background: no-repeat center top
+                            content: ''
+                            display: inline-block
+                            height: 42px
+                            left: -53px
+                            position: absolute
+                            width: 42px
+                    &.control-plan-info
+                        h3:before
+                            background-image: url('/assets/images/control-plan-info.png')
+                    &.change-number-info
+                        h3:before
+                            background-image: url('/assets/images/change-number-info.png')
+                    &.internet-4G-info
+                        h3:before
+                            background-image: url('/assets/images/internet-4G-info.png')
+                    &.unlimited-sms-info
+                        h3:before
+                            background-image: url('/assets/images/unlimited-sms-info.png')
+                    &.recommended-plan-info
+                        h3:before
+                            background-image: url('/assets/images/recommended-plan-info.png')
+                    &.unlimited-calls-info
+                        h3:before
+                            background-image: url('/assets/images/unlimited-calls-info.png')
+                    &.usage-graph-info
+                        h3:before
+                            background-image: url('/assets/images/usage-graph-info.png')
+
++mq('tablet','min')
+    .container
+        .faq
+            ul
+                display: flex
+                flex-wrap: wrap
+                margin-left: 30px
+                li
+                    margin-left: 80px
+                    &:nth-child(odd)
+                        width: 455px
+                    &:nth-child(even)
+                        width: 240px

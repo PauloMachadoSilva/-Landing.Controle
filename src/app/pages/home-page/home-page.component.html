@@ -1,0 +1,154 @@
+<div class="modal-uf" [hidden]="!showDddModal">
+    <div class="modal-uf-container">
+        <div class="modal-close" (click)="showDddModal = false">X</div>
+        <h2 class="title-ddd">Selecione seu Estado e DDD</h2>
+        <form-ddd-selector [defaultState]="currentState" [defaultDdd]="currentDdd" (send)="onDddSend($event)"></form-ddd-selector>
+    </div>
+</div>
+<more-informations [(display)]="showPopup" *ngIf="showPopup != ''" (closed)="showPopup = ''"></more-informations>
+
+<header>
+    <div class="container">
+        <div class="branding">
+            <h1 class="logo">{{ title }}</h1>
+            <nav>
+                <ul (click)="showDddModal = true">
+                    <li class="phone">
+                        <p><span>Televendas </span>{{ phoneNumber }}</p>
+                    </li>
+                    <li class="state">
+                        <p><span>Estado </span>{{ currentStateDesc }}</p>
+                    </li>
+                    <li class="ddd">
+                        <p><span>DDD </span>{{ currentDdd }}</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="assine-ja" class="featured-plan" *ngIf="featuredPlan">
+            <div class="featured-plan-internet-4g">
+                <span class="logo-4g">4G+</span>
+            </div>
+
+            <div class="featured-plan-internet">
+                <div>
+                    <div class="bandwidth-block">
+                        <div class="bandwidth">
+                            <span class="bandwidth-size">{{ featuredPlan.title }}</span>
+                            <span class="internet">{{ featuredPlan.subTitle }}</span>
+
+                            <div class="calls">
+                                <div class="unlimited-calls">
+                                    <span class="calls1">{{ featuredPlan.description.calls.title }}</span>
+                                    <span class="calls2">{{ featuredPlan.description.calls.description }}</span>
+                                </div>
+                                <div class="all-carriers">
+                                    <span class="carriers1">Serviços Digitais</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="featured-plan-value">
+                        <span> A partir de</span>
+                        <div class="featured-plan-value-price">
+                            <span class="symbol">R$</span>
+                            <span class="real">{{featuredPlan.price.split(',')[0]}},</span>
+                            <span class="cents">{{featuredPlan.price.split(',')[1]}}</span>
+                            <span class="text">/mês</span>
+                        </div>
+
+                        <div class="sign-now">
+                            <button class="sign-now-btn -banner" (click)="openPlan(featuredPlan.skuCode)">Assine já</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <section class="plan-list">
+        <h2>Encontre o plano perfeito para você</h2>
+
+        <ul class="cards">
+            <plan-card *ngFor="let plan of planList; let i = index" [plan]="plan" [index]="i + 1" (send)="openPlan($event)" (openInfo)="openInfo()"></plan-card>
+        </ul>
+        <p class="MB-de-bnus-conc">*500MB de bônus concedido na escolha da opção de conta digital.</p>
+    </section>
+    <p class="prices-plans-text">* Os planos e preços exibidos são para o seguinte estado/DDD: Rio de Janeiro, 21. Caso esse não seja o seu DDD
+        <a href="#">clique aqui para alterá-lo</a>
+    </p>
+    <section class="more-digital-services">
+        <h2>Saiba mais sobre os serviços digitais</h2>
+        <div class="sub-title">Tenha acesso grátis a aplicativos exclusivos</div>
+        <ul class="cards">
+            <service *ngFor="let service of serviceData.digitalServiceList" [service]="service"></service>
+        </ul>
+
+        <div class="small-info">
+            <p>{{ serviceData.warnMessage }}</p>
+        </div>
+
+        <div class="confirm-regulation">
+            <a class="confirm-regulation-btn" href="{{ serviceData.policyLink }}">
+                <span class="confirm-regulation-text">Confira o regulamento</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Dúvidas Frequentes</h2>
+        <ul>
+            <li *ngFor="let question of questionList" class="item {{ question.style }}">
+                <h3>{{ question.question }}</h3>
+                <p *ngFor="let answer of question.answerList">{{ answer }}</p>
+            </li>
+        </ul>
+    </section>
+
+    <div class="want-change">
+        <button class="want-change-btn" onclick="location.href = '#assine-ja'">
+            <span class="want-change-img">QUERO MUDAR</span>
+        </button>
+    </div>
+    <div class="attendance-mobile">
+        <p>Central de Atendimento Vivo Móvel *8486
+            <br>Deficientes Auditivos e da Fala 142</p>
+    </div>
+    
+    <footer>
+        <div class="small-info">
+            <p>Velocidade máxima da internet disponível de até 5Mbps para download e 500Kbps para upload. Depois de atingir a franquia de dados, o usuário terá a navegação interrompida até a próxima renovação do ciclo (caso deseje, poderá contratar pacote adicional). Os aplicativos de conteúdo inclusos na contratação dos planos promocionais Controle podem ser o GoRead, Kantoo Inglês, NBA, Vivo Sync 32GB e Vivo Guru, porém, cada plano promocional Controle possui uma formatação diferente de serviços adicionais, podendo contemplar somente um ou mais aplicativos em conjunto. A navegação nos serviços digitais é descontada da franquia de internet (consumo médio GoRead: 80MB por revista; Kantoo Inglês: 23MB por lição; NBA: 320MB streaming de 15 min; Vivo Sync 32GB: 2MB por foto armazenada). O plano de R$ 42,99 está disponível para clientes que não quiserem os aplicativos de conteúdo. As franquias dos planos são referentes a contratação do plano Controle com adesão da conta digital, que concede um bônus mensal de 500MB. Esse bônus está disponível para todos os planos vigentes do Controle. Consulte os regulamentos. Para mais informações, acesse vivo.com.br/controle. Para conhecer as condições para navegar em 4G+, acesse vivo4g.com.br. Condições válidas até 31/08/2018.
+            </p>
+        </div>
+        <div class="footnote-img-parent">
+            <div class="copyright-2015-viv">
+                <p>Copyright ® 2015 Vivo. Todos os direitos reservados.</p>
+                <img class="footnote-telefonica-img" src="/assets/images/telefonica-logo.png">
+            </div>
+            <div class="central-de-atendimen">
+                <p>Central de Atendimento Vivo Móvel *8486
+                    Deficientes Auditivos e da Fala 142</p>
+                <img  class="footnote-viva-tudo-img" src="/assets/images/vivo-tudo-logo.png">
+            </div>
+            
+        </div>
+        <div class="footnote-img-parent-mobile">
+            <div class="footnote-telefonica-img">
+                <img src="/assets/images/telefonica-logo.png">
+            </div>
+            <div class="footnote-viva-tudo-img">
+                <img src="/assets/images/vivo-tudo-logo.png">
+            </div>
+            <div class="copyright-2015-viv">
+                <p>Copyright ® 2015 Vivo. Todos os direitos reservados.</p>
+            </div>
+            
+        </div>
+
+
+    </footer>
+</div>

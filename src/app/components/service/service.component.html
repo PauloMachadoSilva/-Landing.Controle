@@ -1,0 +1,10 @@
+<li class="item">
+    <img src="{{ service.icon }}" alt="{{ service.title }}" title="{{ service.title }}">
+    <h3 class="service-title">{{ service.title }}</h3>
+    <p class="service-text" *ngFor="let description of service.descriptionList">{{ description }}</p>
+    <div class="download-now">
+        <a class="download-now-btn" href="{{ service.link }}" target="blank">
+            <span class="download-now-text"> Baixe agora</span>
+        </a>
+    </div>
+</li>

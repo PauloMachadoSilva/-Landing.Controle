@@ -1,0 +1,39 @@
+{
+    "digitalServiceList": [
+        {
+            "title": "Sync",
+            "description": [
+                "Com Vivo Sync, você protege e sincroniza as fotos, as músicas, os vídeos e os contatos do seu smartphone, tablet e computador na nuvem."
+            ],
+            "icon": "/assets/images/mobile-sync.png",
+            "link": "https://appstore.vivo.com.br/seguranca-assintencia/vivo-sync/controle"
+        },
+        {
+            "title": "Vivo Go Read",
+            "description": [
+                "Acesse grátis mais de 150 revistas digitais. Leia as principais publicações do Barsil no seu smartphone ou tablet."
+            ],
+            "icon": "/assets/images/go-read-tablet.png",
+            "link": "http://www.appstore.vivo.com.br/entretenimento/vivo-go-read/controle"
+        },
+        {
+            "title": "NBA",
+            "description": [
+                "Acompanhe o campeonato e assista ao vivo a um jogo da fase de classificação."
+            ],
+            "icon": "/assets/images/mobile-nba.png",
+            "link": "http://www.appstore.vivo.com.br/entretenimento/vivo-nba/controle"
+        },
+        {
+            "title": "Kantoo inglês",
+            "description": [
+                "Já pensou em ter um curso de inglês na palma da sua mão? Estude em qualquer lugar usando o aplicativo Kantoo Inglês no seu smartphone."
+            ],
+            "icon": "/assets/images/mobile-kantoo.png",
+            "link": "http://appstore.vivo.com.br/educacao/kantoo-ingles/controle"
+        }
+    ],
+
+    "warnMessage": "A navegação nos serviços digitais é descontada da franquia de internet (consumo médio GoRead: 80MB por revista; Kantoo Inglês: 23MB por lição; NBA: 320MB streaming de 15 min).",
+    "policyLink": "https://www.vivo.com.br/portalweb/ShowPropertyServlet?nodeId=/UCMRepository/CONTRIB_138766"
+}

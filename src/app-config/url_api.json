@@ -1,0 +1,4 @@
+{
+    "STATE_SERVICE_GET_STATES":       { "hasOrigin": true, "spinner": "all",  "url": "endereco/listar/UFs/ddds" },
+    "PLANS_SERVICE_PLAN_BY_DDD_LIST": { "hasOrigin": true, "spinner": "all",  "url": "produto/Origem/listar/planos/porddd" }
+}

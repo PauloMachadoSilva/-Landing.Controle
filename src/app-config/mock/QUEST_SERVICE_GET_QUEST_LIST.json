@@ -1,0 +1,65 @@
+[
+    {
+        "question": "Como funciona o Plano Controle?",
+        "answerList": [
+            "Os Planos Vivo Controle Giga são planos pós-pagos (você recebe fatura em sua casa).",
+            "Ao adquirir um plano Controle você garante que sua conta nunca ultrapassará o valor do plano contratado. Ou seja, se você optar pelo plano de R$ 39,99 você estará assegurando que sua fatura sempre chegará com o valor de R$ 39,99. Assim, você tem controle total sobre seus gastos.",
+            "Você pode ver todas as diferenças entre os planos na tabela acima."
+        ],
+        "style": "control-plan-info"
+    },
+    {
+        "question": "Preciso mudar meu número?",
+        "answerList": [
+            "Não, você não precisa mudar seu número. Sendo um cliente Vivo, efetuamos a mudança do seu plano em sua própria linha atual, mantendo seu número",
+            "Caso seja cliente de outra operadora, nós fazemos a portabilidade para você!"
+        ],
+        "style": "change-number-info"
+    },
+    {
+        "question": "Tenho direito a Internet 4G?",
+        "answerList": [
+            "Em todos os planos você poderá navegar na internet 4G com velocidade de até 5Mbps.",
+            "Lembre-se que para navegar em 4G é necessário ter um aparelho compatível, chip USIM e estar na área de cobertura. Verifique se você está na área de cobertura consultando no site da Vivo."
+        ],
+        "style": "internet-4G-info"
+    },
+    {
+        "question": "SMS ilimitados para qualquer operadora?",
+        "answerList": [
+            "Em todos os planos Vivo Controle Giga você pode enviar SMS ilimitados para números de qualquer operadora."
+        ],
+        "style": "unlimited-sms-info"
+    },
+    {
+        "question": "Qual o Plano Controle mais recomendado para mim?",
+        "answerList": [
+            "Nós recomendamos sempre o plano que lhe dá mais conforto no seu dia a dia.",
+			"De uma forma geral, o plano de R$ 69,99 é o mais recomendado e o mais escolhido por quem quer falar com outras operadoras, ter mais Internet 4G, enviar SMS ilimitados para qualquer operadora e ainda falar com qualquer telefone VIVO do Brasil",
+            "Isso tudo sem perder o controle dos seus gastos."
+        ],
+        "style": "recommended-plan-info"
+    },
+    {
+        "question": "Ligações Ilimitadas?",
+        "answerList": [
+            "Em todos os planos você poderá falar ilimitado para qualquer telefone Vivo do Brasil, incluindo Vivo Fixo.",
+			"Para garantir o benefício é preciso utilizar o código de operadora 15 ao efetuar a ligação."
+        ],
+        "style": "unlimited-calls-info"
+    },
+    {
+        "question": "Qual o consumo médio dos serviços digitais?",
+        "answerList": [
+            "No GoRead o download de uma revista consome em média 80MB.",
+			"No Kantoo Inglês cada lição completa consome em média 23MB.",
+            "Na NBA um streaming de 15 minutos consome em média 320MB."
+        ],
+        "style": "usage-graph-info"
+    }
+]
+
+
+
+
+

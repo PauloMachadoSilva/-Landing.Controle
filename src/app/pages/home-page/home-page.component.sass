@@ -1,0 +1,450 @@
+@import '../../../assets/styles/tools/mixins'
+
+header
+    background: transparent url('/assets/images/orange-background-vertical.png') no-repeat top right
+    -moz-background-size: cover
+    -o-background-size: cover
+    -webkit-background-size: cover
+    background-size: cover
+    border: 1px solid transparent
+    margin-bottom: -50px
+    position: relative
+    z-index: 1
+    .container
+        height: 613px
+        &:before
+            background: transparent url('/assets/images/mobile-image.png') no-repeat center bottom
+            -moz-background-size: contain
+            -o-background-size: contain
+            -webkit-background-size: contain
+            background-size: contain
+            content: ''
+            height: 260px
+            position: absolute
+            left: 0
+            bottom: -90px
+            width: 100%
+    .branding
+        height: 40px
+        .logo
+            background: transparent url('/assets/images/vivo-control-logo.png') no-repeat center left
+            -moz-background-size: contain
+            -o-background-size: contain
+            -webkit-background-size: contain
+            background-size: contain
+            height: 28px
+            margin: 75px auto 5px auto
+            position: relative
+            color: transparent
+            text-indent: -9999999px
+            width: 275px
+        ul
+            display: flex
+            margin: -92px auto 0 auto
+            width: 275px
+            fabiana veiga
+
+            li
+                color: #6e2383
+                font-family: 'OfficinaSerifStd-Bold'
+                font-size: 16px
+                text-transform: uppercase
+                p
+                    border-right: 1px solid #fbe7b7
+                    margin: 0
+                    padding: 5px 10px
+                    span
+                        color: #4a4a4a
+                        display: block
+                        font-family: 'OfficinaSerifStd-Book'
+                        font-size: 12px
+                    &.state
+                        padding-left: 22px
+                        position: relative
+                        width: 121px
+                        &:before
+                            background: url('/assets/images/pin.png') no-repeat center center
+                            content: ''
+                            height: 26px
+                            left: 0
+                            position: absolute
+                            top: 9px
+                            width: 18px
+                &.ddd p
+                    border-right: 0 none
+
+.container
+    margin: 0 auto
+    max-width: 950px
+    position: relative
+    .featured-plan
+        .sign-now
+            margin: 24px 0 0 0
+            text-align: center
+        &-internet-4g
+            height: 50px
+            margin: -31px auto
+            text-align: right
+            text-align: right
+            width: 275px
+            .logo-4g
+                background: transparent url('/assets/images/logo-4g.png') no-repeat center right
+                -moz-background-size: contain
+                -o-background-size: contain
+                -webkit-background-size: contain
+                background-size: contain
+                color: transparent
+                display: block
+                height: 17px
+                width: 275px
+        &-internet
+            color: #6e2383
+            font-family: 'OfficinaSerifStd-Bold'
+            margin-top: 29px
+
+            .bandwidth-block
+                align-items: center
+                display: flex
+                margin: 0 auto
+                width: 300px
+
+                > .bandwidth
+                    font-family: 'OfficinaSerifStd-Bold'
+                    font-size: 92px
+                    letter-spacing: -0.5px
+                    line-height: 26px
+                    text-align: center
+                    // width: 242px
+                    &-size
+                        letter-spacing: -6.5px
+                    > .internet
+                        font-size: 23px
+
+                    > .calls
+                        color: #ffffff
+                        font-size: 22px
+                        margin: 19px auto
+                        text-align: left
+                        width: 191px
+                        div
+                            margin-bottom: 20px
+                            &:before
+                                -webkit-text-stroke: 1px #ffffff
+                                color: #6e2383
+                                content: '+'
+                                font-size: 28px
+                                margin-left: -20px
+                                position: absolute
+                        >.unlimited-calls
+                            font-size: 22px
+                            > .calls2
+                                display: block
+                                font-size: 14px
+
+        &-value
+            border-top: 2px solid #fff
+            display: block
+            margin: 0 auto
+            position: relative
+            text-align: left
+            width: 270px
+            padding: 19px 0
+            > span
+                display: block
+                color: #fff
+            &-price
+                font-family: 'OfficinaSerifStd-Bold'
+                height: 83px
+                position: relative
+                > *
+                    position: absolute
+                > .symbol
+                    font-size: 40px
+                    left: 0
+                    top: 0
+                > .real
+                    font-size: 104px
+                    left: 46px
+                    top: -20px
+                > .cents
+                    font-size: 52px
+                    left: 181px
+                    top: 0
+
+                > .text
+                    color: #fff
+                    font-family: 'OfficinaSerifStd-Book'
+                    font-size: 21px
+                    left: 190px
+                    top: 57px
+
+    ul
+        list-style-type: none
+        margin: 0 29px 0 72px
+        padding: 0
+
+    ul.cards
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-evenly
+        margin: 0
+
+    img
+        max-height: 100%
+        max-width: 100%
+
+    .confirm-regulation
+        display: flex
+        justify-content: center
+        margin: 0px 6%
+        margin-bottom: 8px
+
+    .want-change
+        display: flex
+        justify-content: center
+    .attendance-mobile
+        display: none
+    .plan-list
+        -webkit-border-radius: 13px
+        -moz-border-radius: 13px
+        border-radius: 13px
+        background-color: #fafafa
+        box-shadow: 2px 3px 17px 0 rgba(0, 0, 0, 0.21)
+        margin: 0 20px
+        padding: 0 0 10px 0
+        position: relative
+        z-index: 10
+        > h2
+            color: #6e2383
+            font-family: 'OfficinaSerifStd-Bold'
+            font-size: 30px
+            margin: 0
+            padding-top: 20px
+            text-align: center
+
+    .more-digital-services
+        > h2
+            color: #6e2383
+            font-family: 'OfficinaSerifStd-Bold'
+            font-size: 30px
+            letter-spacing: -0.5px
+            margin: 30px 20px 6px 20px
+            text-align: center
+        > .sub-title
+            color: #4a4a4a
+            font-family: 'OfficinaSerifStd-Book'
+            font-size: 17px
+            letter-spacing: -0.5px
+            line-height: 1.12
+            margin: 0 20px
+            text-align: center
+        ul.cards
+            align-items: flex-end
+
+    .prices-plans-text
+        padding-top: 44px
+        color: #4a4a4a
+        font-family: 'OfficinaSerifStd-Book'
+        font-size: 14px
+        letter-spacing: -0.5px
+        text-align: center
+        margin: 0 28px
+        > a
+            color: #6e2383
+            letter-spacing: normal
+    .MB-de-bnus-conc 
+        text-align: center
+        font-family: OfficinaSerifStd
+        font-size: 12px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        line-height: normal
+        letter-spacing: normal
+        color: #4a4a4a
+    .small-info
+        color: #4a4a4a
+        font-family: 'OfficinaSerifStd-Book'
+        font-size: 12px
+        line-height: 1.17
+        margin: 26px 20px 32px 20px
+        text-align: justify
+
+    .footnote-img-parent
+        align-items: center
+        display: flex
+        flex-direction: column
+        margin: 26px 20px 32px 20px
+        .central-de-atendimen 
+            width: 212px
+            height: 38px
+            font-family: OfficinaSerifStd
+            font-size: 12px
+            font-weight: normal
+            font-style: normal
+            font-stretch: normal
+            letter-spacing: normal
+            text-align: right
+            color: #a4a4a4
+            position: absolute
+            right: 0
+            margin: 0px 20px 32px 20px
+        .copyright-2015-viv 
+            width: 263px
+            font-family: OfficinaSerifStd
+            font-size: 12px
+            font-weight: normal
+            font-style: normal
+            font-stretch: normal
+            line-height: normal
+            letter-spacing: normal
+            color: #a4a4a4
+            position: absolute
+            left: 0
+            margin: 0px 20px 32px 20px
+        .footnote-telefonica-img
+            flex: 1
+            height: 22px
+            margin-bottom: 8px
+            object-fit: contain
+            width: 76px
+            left: 0
+            position: absolute
+            padding: 40px 20px 20px 0px
+                
+        .footnote-viva-tudo-img
+            flex: 1
+            height: 15px
+            object-fit: contain
+            right: 0
+            position: absolute
+            padding: 20px 0px 20px 0px
+    .footnote-img-parent-mobile
+        display: none
+    .footnote-text
+        color: #a4a4a4
+        font-family: 'OfficinaSerifStd-Book'
+        font-size: 12px
+        text-align: center
+        > p
+            margin: 30px 0
+
++mq('tablet', 'min')
+    header
+        background: transparent url('/assets/images/header-background.png') no-repeat top right
+        -moz-background-size: cover
+        -o-background-size: cover
+        -webkit-background-size: cover
+        background-size: cover
+        height: 313px
+        padding: 0 30px
+        .container
+            &:before
+                background-position: right center
+                bottom: auto
+                height: 257px
+                left: 494px
+                right: 0
+                width: auto
+        .branding
+            .logo
+                margin: 0
+                height: 55px
+                width: 443px
+            ul
+                background: rgba(255, 255, 255, 0.3)
+
+                -webkit-border-bottom-left-radius: 5px
+                -webkit-border-bottom-right-radius: 5px
+                -moz-border-radius-bottomleft: 5px
+                -moz-border-radius-bottomright: 5px
+                border-bottom-left-radius: 5px
+                border-bottom-right-radius: 5px
+                cursor: pointer
+                margin: 0
+                position: absolute
+                right: 5px
+                top: 0
+    .container
+        .plan-list
+            > h2
+                font-size: 36px
+        .featured-plan
+            &-internet-4g
+                margin-top: -17px
+                width: auto
+                .logo-4g
+                    height: 28px
+                    width: 537px
+            &-internet
+                margin-top: 20px
+                > div:first-child
+                    display: flex
+                .bandwidth-block
+                    margin: 22px 0 0 0
+                    width: 257px
+                    .bandwidth
+                        .calls
+                            margin: 0 20px
+                            div
+                                margin-bottom: 10px 30px
+            &-value
+                border-left: 1px solid #fff
+                border-top: 0
+                margin: 0
+                padding: 0 10px
+            .sign-now
+                margin: 27px 0 0 10px
+                text-align: left
++mq('tablet-small', 'max')
+    .attendance-mobile
+        display: block !important
+        position: relative
+        margin: 0 auto
+        width: 212px
+        height: 38px
+        font-family: OfficinaSerifStd
+        font-size: 12px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        line-height: 1.58
+        letter-spacing: normal
+        text-align: center
+        color: #a4a4a4
+    .footnote-img-parent-mobile
+        display: block !important
+        margin: 0 auto
+        text-align: center
+        .footnote-telefonica-img
+            width: 76px
+            height: 22px
+            object-fit: contain
+            margin: 0 auto
+        .footnote-viva-tudo-img
+            width: 138px
+            height: 15px
+            object-fit: contain
+            margin: 8px auto
+
+    .footnote-img-parent
+        display: none !important
+    .copyright-2015-viv
+        position: relative !important
+        margin: 0 auto !important
+        width: 263px
+        font-family: OfficinaSerifStd
+        font-size: 12px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        line-height: normal
+        letter-spacing: normal
+        color: #a4a4a4
+        >p
+            margin: 30px 0;
+    .central-de-atendimen
+        position: relative !important
+        margin: 0 auto !important
+        text-align: center !important
+

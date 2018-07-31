@@ -1,0 +1,46 @@
+<li class="plan plan-item-{{ index }}">
+    <div class="plan-header">
+        <h3>{{ plan.title }}
+            <span>{{ plan.subTitle }}</span>
+        </h3>
+        <p>
+            {{ plan.description.calls.title }}
+            <span>{{ plan.description.calls.description }}</span>
+        </p>
+    </div>
+
+    <div class="plan-featured">
+        <p class="text-featured">Apps de conteúdo exclusivo</p>
+        <p *ngIf="plan.description.sva">{{ plan.description.sva.description }}</p>
+    </div>
+
+    <div class="plan-value">
+        <div class="plan-price">
+            <span class="plan-price-symbol">R$</span>
+            <span class="plan-price-real">{{plan.price.split(',')[0]}}</span>
+            <span class="plan-price-cents">,{{plan.price.split(',')[1]}}</span>
+            <span class="plan-price-text">/mês</span>
+        </div>
+        <button class="sign-now-btn -plan-card-btn" (click)="onSubmit(plan.skuCode)"><span class="sign-now-text">Assine já</span></button>
+    </div>
+
+    <div class="plan-more">
+        <div class="plan-more-dropdown">
+            <p>
+                <a href="javascript: void(0)" (click)="showDetails = !showDetails">+ Detalhes</a>
+            </p>
+            <ul [hidden]='!showDetails'>
+                <li *ngFor='let value of detailList'>
+                    <span>{{ value }}</span>
+                </li>
+            </ul>
+        </div>
+        <div class="separator"></div>
+        <div class="plan-more-dropdown">
+            <p>
+                <a href="javascript: void(0)" (click)="onOpenPlan()">+ Informações</a>
+            </p>
+        </div>
+    </div>
+
+</li>
